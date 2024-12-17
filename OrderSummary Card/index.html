@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary tag</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container .card {
+            background-color: #F7F7F7;
+            width: 350px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            gap: 10px;
+
+        }
+
+        .card img {
+            width: 60%;
+        }
+
+        .textBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 75%;
+            text-align: center;
+
+        }
+
+        #amountBox {
+            height: 10%;
+            width: 80%;
+            background-color: #7dffcfd0;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        .leftBox {
+            display: flex;
+            flex-direction: row;
+            padding-top: 8px;
+            width: 60%;
+            gap: 10px;
+
+            .textBox1 {
+                display: inline;
+                text-align: center;
+            }
+
+
+        }
+
+        .imgBox {
+            height: 90%;
+            width: 30%;
+
+        }
+
+        .imgBox img {
+            height: 95%;
+            width: 95%;
+            border-radius: 30px;
+
+        }
+
+        #payementButton {
+            height: 10%;
+            width: 80%;
+            background-color: rgb(44, 19, 236);
+            border-radius: 5px;
+            color: #F7F7F7;
+            border-color: rgb(44, 19, 236);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            font-weight: bold;
+            font-size: large;
+        }
+
+        #payementButton:hover {
+            background-color: aqua;
+            color: #ec0a0a;
+        }
+
+        .cancelBox a {
+            text-decoration: none;
+            color: rgb(46, 43, 43);
+            font-weight: bold;
+            font-size: large;
+
+        }
+
+        .rightBox {
+            display: flex;
+
+            align-items: center;
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="ordersummary.webp" alt="ordersummary">
+
+            <div class="textBox">
+                <h2>Order Summary</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quisquam incidunt tempora molestias
+                    minima doloribus.</p>
+            </div>
+            <div id="amountBox">
+                <div class="leftBox">
+                    <div class="imgBox">
+                        <img src="tick.png" alt="tick">
+                    </div>
+                    <div class="textBox1">
+                        <p>
+                            Amount: $100
+                        </p>
+                        <p>
+                            Discount: $20
+                        </p>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <a href="http://">Change</a>
+                </div>
+
+            </div>
+
+            <button id="payementButton">
+                Proceed To Payment
+            </button>
+
+            <div class="cancelBox">
+                <a href="http://">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
